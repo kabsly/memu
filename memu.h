@@ -49,6 +49,9 @@
         http://creativecommons.org/licenses/by/3.0/deed.en_US
 */
 
+#ifndef MEMU_HEADER
+#define MEMU_HEADER
+
 #ifdef MEMU_IMPLEMENTATION
 #   if defined(_WIN32)
 #       pragma comment(lib, "psapi.lib")
@@ -159,3 +162,5 @@ MEMU_PREFIX size_t memu_get_curr_rss()
 #ifdef __cplusplus
 }
 #endif
+
+#endif /* MEMU_HEADER */
