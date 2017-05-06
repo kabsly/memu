@@ -51,6 +51,7 @@
 
 #ifdef MEMU_IMPLEMENTATION
 #   if defined(_WIN32)
+#       pragma comment(lib, "psapi.lib")
 #       include <windows.h>
 #       include <psapi.h>
 #   elif defined(__unix__) || defined(__unix) || defined(unix) || (defined(__APPLE__) && defined(__MACH__))
