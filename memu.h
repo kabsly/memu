@@ -84,8 +84,8 @@ extern "C" {
 #endif
 
 /* Prototypes */
-size_t memu_get_peak_rss();
-size_t memu_get_curr_rss();
+MEMU_PREFIX size_t memu_get_peak_rss();
+MEMU_PREFIX size_t memu_get_curr_rss();
 
 #ifdef MEMU_IMPLEMENTATION
 
